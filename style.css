@@ -1,0 +1,178 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+body,html{
+    background: linear-gradient(90deg, rgba(139,0,255,1) 0%, rgba(255,0,227,1) 90%);
+    height:100vh;
+    width:100%;
+    overflow:hidden ;
+}
+.search{
+    background: linear-gradient(-90deg, rgba(139,0,255,1) 0%, rgba(255,0,227,1) 90%);
+    padding:1rem 1rem 6rem 1rem;
+}
+#city{
+    outline:none;
+    border:none;
+    border-bottom:1px solid white;
+    background:transparent ;
+    padding:.3rem .7rem;
+    width:100%;
+    color:white;
+}
+#btn{
+    outline:none;
+    border:none;
+    padding:.3rem .7rem;
+    border-radius:4px;
+    width:100%;
+    margin-top:1rem;
+    color:white;
+    background:rgba(0,0,0,.28);
+    backdrop-filter:blur(12px);
+    height:32px;
+    font-weight:bold;
+    font-size:15px;
+    text-shadow:1px 1px 0 black;
+    letter-spacing:1.4px;
+}
+.content{
+    padding:.7rem;
+    margin:-4.5rem 0 0 0;
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(20px);
+    height:100vh;
+    border-top:.2px solid silver;
+    border-radius:20px 20px 0 0;
+    background:url("https://source.unsplash.com/random/weather");
+    background-repeat:no-repeat ;
+    background-position:center ;
+    background-size:cover;
+}
+.city{
+    text-align:center ;
+    color:white;
+    text-transform:capitalize ;
+    font-weight:bolder;
+    font-size:20px;
+}
+.f1{
+    background:yellow;
+    height:6rem;
+    width:6rem;
+    border-radius:50%;
+    position:absolute ;
+    top:5%;
+}
+.f2{
+    background:red;
+    height:5rem;
+    width:6rem;
+    border-radius:50%;
+    position:absolute ;
+    top:0%;
+    right:2rem;
+}
+.f3{
+    background:blue;
+    height:8rem;
+    width:8rem;
+    border-radius:50%;
+    position:absolute ;
+    top:60% ;
+    right:0rem;
+}
+.f4{
+    background:green;
+    height:4rem;
+    width:4rem;
+    border-radius:50%;
+    position:absolute ;
+    top:55%;
+    left:1rem;
+}
+::placeholder{
+    color:white;
+    opacity:.8;
+}
+.card{
+    padding:1rem;
+    width:88%;
+    margin-top:3rem;
+    background:rgba(0,0,0,.28);
+    backdrop-filter:blur(12px);
+    border-top:.12px solid crimson;
+    border-bottom:.11px solid ghostwhite;
+    border-radius:10px;
+    position:absolute ;
+    left:6%;
+    text-shadow:1px 1px 0 black;
+    overflow:hidden ;
+}
+.title{
+    text-transform:capitalize ;
+    color:silver;
+    opacity:.76;
+}
+.temp{
+    text-align:center ;
+    color:white;
+    text-transform:capitalize ;
+    font-weight:bold;
+    font-size:38px;
+    padding-top:.65rem;
+}
+.con{
+    text-align:center ;
+    color:white;
+    text-transform:capitalize ;
+    font-size:22px;
+    padding-top:3.8rem;
+}
+.cbg{
+    background: linear-gradient(90deg, rgba(139,0,255,1) 0%, rgba(255,0,227,1) 90%);
+    position:absolute ;
+    padding:4rem;
+    border-radius:78% 22% 64% 36% / 36% 75% 25% 64%  ;
+    filter:blur(1px);
+}
+.cbg1{
+    background: linear-gradient(-90deg, rgba(255,0,0,1) 0%, rgba(255,149,0,1) 90%);
+    position:absolute ;
+    padding:4rem;
+    border-radius:78% 22% 64% 36% / 36% 75% 25% 64%  ;
+    filter:blur(0px);
+    right:0%;
+    top:calc(50vh - 30%);
+}
+.inner{
+    padding:7.6rem;
+    background:black;
+    position:absolute ;
+    border-radius:50%;
+    left:-2.2rem;
+    bottom:-3.2rem;
+    opacity:.13;
+    animation:10s pulse infinite alternate;
+}
+@keyframes pulse{
+    to{padding:5rem;}
+}
+.icon{
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    position:absolute ;
+    margin-top:1.8rem;
+}
+.loader{
+    text-align:center ;
+    font-size:50px;
+    animation:r 2s infinite ;
+}
+@keyframes r{
+    to{transform:rotate(360deg);}
+}
